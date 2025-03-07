@@ -1,41 +1,47 @@
 * {
   box-sizing: border-box;
 }
-.html {
+
+html {
   font-size: 62.5%;
 }
 
+/* khôi phục lại cỡ chữ mặc định theo rem */
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
-/* common */
-.btn {
-  display: inline-block;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 1.6rem;
-  text-align: center;
-  background: #171100;
-  border-radius: 24.5px;
-  padding: 0 16px;
-  line-height: 50px;
-  min-width: 118px;
-}
+/* =================common================== */
 a {
   text-decoration: none;
 }
+
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 24.5px;
+  background: #171100;
+}
+
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
 }
-/* header */
-.header{
-  background-color: #FFFCF4;
+
+/* =================header================== */
+.header {
+  background: #FFFCF4;
 }
-.header.fixed{
+
+.header.fixed {
   position: sticky;
   top: -28px;
 }
@@ -44,25 +50,28 @@ a {
   align-items: center;
   padding: 36px 0 8px;
 }
+
 .nav {
   margin-left: auto;
 }
 .nav ul {
   display: flex;
 }
+
 .nav a {
   position: relative;
   color: #5f5b53;
-  letter-spacing: 0%;
-  text-align: center;
+  font-size: 1.6rem;
   padding: 8px 21px;
 }
+
 .nav li.active a,
 .nav a:hover {
-  /* font-weight: 600; */
   color: #171100;
+  /* font-weight: 600; */
   text-shadow: 1px 0 0 currentColor;
 }
+
 .nav li.active a::after {
   position: absolute;
   left: 21px;
@@ -72,11 +81,14 @@ a {
   width: 12px;
   height: 2px;
   border-radius: 1px;
-  background-color: #171100;
+  background: #171100;
 }
-header .btn-sign-up{
+
+.header .btn-sign-up {
   min-width: 144px;
 }
+
+
 .header .action{
   margin-left: 49px;
 }
